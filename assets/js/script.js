@@ -95,7 +95,3 @@ function buscarPersonaje() {
         $("#input_busqueda").focus();
     }
 }
-
-
-        
-        
