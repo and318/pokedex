@@ -9914,7 +9914,7 @@ h3 {
   }
 }
 body {
-  background-image: url(/assets/img/bkg.jpg);
+  background-image: url(../img/bkg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
