@@ -1,0 +1,24 @@
+/*
+Rick and Morty api
+Manifiesto Sass + Bootstrap 4.5
+*/
+
+//themes 
+@import "themes/theme";
+
+//abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+
+//vendor
+@import "vendor/bootstrap4.5/bootstrap";
+
+//base
+@import "base/reset";
+
+//pages
+@import "pages/index";
+
+//componenets
+@import "components/button"; 

@@ -1,0 +1,48 @@
+body {
+    background-image: url(/assets/img/bkg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card {
+    background-color: #D2F2C2;
+    position: relative;
+    border-radius: 30px;
+    .card-img-top {
+        padding: 40px;
+        z-index: 1;
+    }
+    .circle {
+        padding: 100px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        top: 15%;
+        left: 15%;
+        z-index: 0;
+    }
+    .card-title {
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .table {
+        margin-bottom: 0;
+    }
+    .card-body {
+        text-align: center;
+        .number {
+            border-radius: 20px;
+            padding: 3px 10px;
+            font-size: 1.1rem;
+            background: rgba(0, 0, 0, 0.2);
+        }
+        .name {
+            font-weight: bold;
+            text-transform: capitalize;
+            font-size: 30px;
+        }
+        .type {
+            font-weight: lighter;
+        }
+    }
+}
+
