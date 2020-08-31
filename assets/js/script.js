@@ -10,6 +10,7 @@ $(function () {
             buscarPersonaje();
         }
     })
+    var stats = 0;
 });
 
 function getPersonaje(id) {
@@ -21,6 +22,7 @@ function getPersonaje(id) {
             //imprimir data
             generarCard(response);
             $("#card").append(generarCard(response));
+            generarGrafico(data);
         }
     });
 }
@@ -40,6 +42,36 @@ function generarCard(personaje) {
 </div>
 
     `
+    //Gráfico
+
+var hp =  personaje.stats[0].base_stat;
+var atk = personaje.stats[1].base_stat;
+var def = personaje.stats[2].base_stat;
+var atkp = personaje.stats[3].base_stat;
+var defp = personaje.stats[4].base_stat;
+var spd = personaje.stats[5].base_stat;
+
+
+
+
+        var options = {
+            animationEnabled: true,
+            
+            data: [{
+                type: "column",
+                yValueFormatString: "#",
+                dataPoints: [
+                    { label: "HP", y: hp },	
+                    { label: "Ataque", y: atk},	
+                    { label: "Defensa", y: def },
+                    { label: "Ataque +", y: atkp },	
+                    { label: "Defensa +", y: defp },
+                    { label: "Velocidad", y: spd }
+                    
+                ]
+            }]
+        };
+        $("#grafico").CanvasJSChart(options);
     return card;
 }
 
@@ -63,8 +95,7 @@ function buscarPersonaje() {
         $("#input_busqueda").focus();
     }
 }
-function limpiar() {
-    $("#card").empty();
-    $("#input_busqueda").focus();
 
-}
+
+        
+        
