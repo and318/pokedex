@@ -31,7 +31,7 @@ function generarCard(personaje) {
     var card = `
 
     <div class="card mx-auto" style="width:  18rem;">
-    <img src="https://pokeres.bastionbot.org/images/pokemon/${personaje.id}.png"
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${personaje.id}.png"
         class="card-img-top img-fluid" alt="...">
     <div class="circle"></div>
     <div class="card-body">
